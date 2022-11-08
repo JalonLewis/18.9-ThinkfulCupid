@@ -1,0 +1,192 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #6b1a22;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1.25em 0 0.625em 0;
+}
+
+h2 {
+  font-size: 1.625em;
+  font-weight: 400;
+  margin: 0 0.625em 0.9375em 0.625em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section.alternate-background {
+  background-color: #a35766;
+  color: #ecdbc9;
+}
+
+main img {
+  width: 100%;
+  padding: 0.625em 0;
+}
+
+#join,
+#about,
+#download,
+#blog {
+  padding: 1.5em;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #83092e;
+  padding: 1.25em auto;
+}
+
+.logo {
+  font-family: "Tangerine", cursive;
+  font-size: 15vw;
+  color: #ecdbc9;
+}
+
+header nav {
+  font-size: 4vw;
+}
+
+header nav ul {
+  display: flex;
+  margin-left: -8%;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #ecdbc9;
+  text-decoration: none;
+  padding: 0 1.25em 0 0;
+}
+
+header nav ul li:last-child a {
+  padding-right: 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Join Form ------- */
+form {
+  border: 0.125em solid #6b1a22;
+  padding: 0.625em;
+}
+
+form label {
+  font-weight: bold;
+  width: 50%;
+  font-size: 1em;
+}
+
+form select,
+form input {
+  margin-bottom: 1.25em;
+  width: 50%;
+}
+
+form button {
+  background-color: #83092e;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 0.9375em;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #83092e;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 1.25em;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #83092e;
+    padding: 0.625em 1.25em;
+  }
+
+  header nav {
+    margin: 0;
+    font-size: 1em;
+  }
+  header nav ul {
+    margin-left: 0%;
+  }
+
+  .logo {
+    font-size: 3em;
+  }
+
+  .group {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item {
+    margin-right: 0;
+  }
+
+  #join {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
